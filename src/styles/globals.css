@@ -1,0 +1,29 @@
+/* src/styles/globals.css */
+:root {
+  --acai-purple: #763074; /* Roxo escuro */
+  --ifood-red: #ea1d2c;
+  --ninety-nine-yellow: #fff34b; /* Amarelo 99 */
+  --whatsapp-green: #25d366;
+  --white: #ffffff;
+  --yellow: #fdfa0a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--acai-purple); /* Fundo roxo da loja de açaí */
+  color: var(--white);
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
