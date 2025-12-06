@@ -1,0 +1,89 @@
+/* src/styles/Home.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  /* Garante que o conteúdo fique centralizado e limitado em telas grandes (desktop) */
+  margin: 0 auto;
+  max-width: 500px; /* Limita a largura principal, otimizado para mobile */
+  width: 100%;
+}
+
+/* Área da Logo */
+.logoArea {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.logoText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.logoTextMenor {
+  color: var(--yellow);
+}
+
+/* Container dos Botões */
+.ctaContainer {
+  display: flex;
+  flex-direction: column; /* Pilha vertical no mobile-first */
+  gap: 1.5rem; /* Espaçamento entre os botões */
+  width: 100%;
+}
+
+/* Estilo Base do Botão CTA */
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.ctaButton:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 1.75rem;
+}
+
+/* Variações de Cor dos Botões */
+.ifood {
+  background-color: var(--ifood-red);
+  color: var(--white);
+}
+
+.ninetyNine {
+  background-color: var(--ninety-nine-yellow);
+  color: #333333; /* Cor mais escura para o texto no amarelo */
+}
+
+.whatsapp {
+  background-color: var(--whatsapp-green);
+  color: var(--white);
+}
+
+/* Media Query opcional para telas muito maiores, ajustando a limitação */
+@media (min-width: 501px) {
+  .ctaContainer {
+    /* Em telas maiores, podemos aumentar um pouco o espaçamento e o padding */
+    gap: 2rem;
+  }
+}
